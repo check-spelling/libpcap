@@ -360,7 +360,7 @@ Tuesday, December 29, 2020
     Remove (unused) SITA support
     Capture file reading:
         Correctly handle pcapng captures with more than one IDB with a
-            snspshot length greater than the supported maximum
+            snapshot length greater than the supported maximum
     Capture file writing:
         Create the file in pcap_dump_open_append() if it doesn't exist
     Packet filtering:
