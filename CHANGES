@@ -111,7 +111,7 @@ Saturday, December 31, 2022 / The Tcpdump Group
         when reading a LINKTYPE_PFLOG file.
       Put CAN ID field in CAN pseudo-headers for LINUX_SLL2, as we do
         for LINUX_SLL.
-      Fix inorrectly-computed "real" length for isochronous USB
+      Fix incorrectly-computed "real" length for isochronous USB
         transfers when reading savefiles.
       Don't crash if pcap_can_set_rfmon() is called.
       Fix pcap_offline_read() loop.
