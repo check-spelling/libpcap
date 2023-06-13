@@ -1853,7 +1853,7 @@ gen_load_a(compiler_state_t *cstate, enum e_offrel offrel, u_int offset,
 		/*
 		 * Load the item at {offset of the link-layer payload} +
 		 * {offset, relative to the start of the link-layer
-		 * paylod, of the IPv4 header} + {length of the IPv4 header} +
+		 * payload, of the IPv4 header} + {length of the IPv4 header} +
 		 * {specified offset}.
 		 *
 		 * If the offset of the link-layer payload is variable,
