@@ -692,7 +692,7 @@ AC_DEFUN(AC_LBL_DEVEL,
 		    # on whether it is, does a compile-time swap or
 		    # a run-time swap; perhaps the compiler always
 		    # considers one of the two results of the
-		    # conditional expressin is never evaluated,
+		    # conditional expression is never evaluated,
 		    # because the conditional check is done at
 		    # compile time, and thus always says "that
 		    # expression is never executed".
