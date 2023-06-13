@@ -559,7 +559,7 @@ daemon_serviceloop(SOCKET sockctrl, int isactive, char *passiveClients,
 		plen = header.plen;
 
 		//
-		// While we're in the authentication pharse, all requests
+		// While we're in the authentication parse, all requests
 		// must use version 0.
 		//
 		if (header.ver != 0)
