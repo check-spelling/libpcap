@@ -2967,7 +2967,7 @@ if test "x$enable_dbus" != "xno"; then
 			#
 			# https://bugs.freedesktop.org/show_bug.cgi?id=74029
 			#
-			# The user dind't explicitly request it, so just
+			# The user didn't explicitly request it, so just
 			# silently refuse to enable it.
 			#
 			enable_dbus="no"
