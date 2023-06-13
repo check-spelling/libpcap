@@ -62,7 +62,7 @@
  */
 #ifdef _WIN32
 /*
- * True if we shouold use UTF-8.
+ * True if we should use UTF-8.
  */
 static int use_utf_8;
 
