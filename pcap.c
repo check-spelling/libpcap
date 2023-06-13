@@ -1964,7 +1964,7 @@ pcap_parse_source(const char *source, char **schemep, char **userinfop,
 		if (*parsep == '[') {
 			/*
 			 * Yes.
-			 * Treat verything up to the closing square
+			 * Treat everything up to the closing square
 			 * bracket as the IP-Literal; we don't worry
 			 * about whether it's a valid IPv6address or
 			 * IPvFuture (or an IPv4address, for that
