@@ -1548,7 +1548,7 @@ error_nodiscard:
  *
  * \param sendbuf: the buffer on which the serialized data has to copied.
  *
- * \param sendbufidx: it is used to return the abounf of bytes copied into the buffer.
+ * \param sendbufidx: it is used to return the amount of bytes copied into the buffer.
  *
  * \param prog: the bpf program we have to copy.
  *
