@@ -6805,7 +6805,7 @@ stringtoport(compiler_state_t *cstate, const char *string, size_t string_size,
 	switch (ret) {
 
 	case STOULEN_OK:
-		/* Unknown port type - it's just a numbrer. */
+		/* Unknown port type - it's just a number. */
 		*proto = PROTO_UNDEF;
 		break;
 
