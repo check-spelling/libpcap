@@ -90,7 +90,7 @@
 #define FMESQUITA_TCPDUMP_MAGIC	0xa1b234cd
 
 /*
- * Navtel Communcations' format, with nanosecond timestamps,
+ * Navtel Communications' format, with nanosecond timestamps,
  * as per a request from Dumas Hwang <dumas.hwang@navtelcom.com>.
  */
 #define NAVTEL_TCPDUMP_MAGIC	0xa12b3c4d
