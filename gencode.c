@@ -9140,7 +9140,7 @@ gen_vlan_patch_vid_test(compiler_state_t *cstate, struct block *b_vid)
 
 	/* Jump to the test in b_vid. We need to jump one instruction before
 	 * the end of the b_vid block so that we only skip loading the TCI
-	 * from packet data and not the 'and' instruction extractging VID.
+	 * from packet data and not the 'and' instruction extracting VID.
 	 */
 	cnt = 0;
 	for (s2 = b_vid->stmts; s2; s2 = s2->next)
