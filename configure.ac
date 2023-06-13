@@ -2624,7 +2624,7 @@ if test "x$enable_netmap" != "xno" ; then
 	#
 	# Check whether net/netmap_user.h is usable if NETMAP_WITH_LIBS is
 	# defined; it's not usable on DragonFly BSD 4.6 if NETMAP_WITH_LIBS
-	# is defined, for example, as it includes a non-existent malloc.h
+	# is defined, for example, as it includes a nonexistent malloc.h
 	# header.
 	#
 	AC_MSG_CHECKING(whether we can compile the netmap support)

@@ -474,7 +474,7 @@ Tuesday, December 29, 2020
             isn't called
         Fix compilation on Cygwin/MSYS
         Add pcap_handle(), and deprecate pcap_fileno()
-        Report PCAP_ERROR_NO_SUCH_DEVICE for a non-existent device
+        Report PCAP_ERROR_NO_SUCH_DEVICE for a nonexistent device
         Return an appropriate error message for device removed or
             device unusable due to a suspend/resume
         Report a warning for unknown NdisMedium types
@@ -721,7 +721,7 @@ Wednesday Nov. 12, 2014 guy@alum.mit.edu/mcr@sandelman.ca
 
 Monday Aug. 12, 2014 guy@alum.mit.edu
   Summary for 1.6.2 libpcap release
-	Don't crash on filters testing a non-existent link-layer type
+	Don't crash on filters testing a nonexistent link-layer type
 	    field.
 	Fix sending in non-blocking mode on Linux with memory-mapped
 	    capture.

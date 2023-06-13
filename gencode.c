@@ -1916,7 +1916,7 @@ gen_loadx_iphdrlen(compiler_state_t *cstate)
 	} else {
 		/*
 		 * The offset of the link-layer payload is a constant,
-		 * so no code was generated to load the (non-existent)
+		 * so no code was generated to load the (nonexistent)
 		 * variable part of that offset.
 		 *
 		 * This means we can use the 4*([k]&0xf) addressing

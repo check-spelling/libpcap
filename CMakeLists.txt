@@ -2080,7 +2080,7 @@ if(NOT DISABLE_NETMAP)
     #
     # Check whether net/netmap_user.h is usable if NETMAP_WITH_LIBS is
     # defined; it's not usable on DragonFly BSD 4.6 if NETMAP_WITH_LIBS
-    # is defined, for example, as it includes a non-existent malloc.h
+    # is defined, for example, as it includes a nonexistent malloc.h
     # header.
     #
     check_c_source_compiles(
