@@ -53,7 +53,7 @@ The following packages and tools must be present for all targets.
 
      https://www.watt-32.net
 
-2. Exception handler and disassember library (libexc.a) is needed if
+2. Exception handler and disassembler library (libexc.a) is needed if
    "USE_EXCEPT = 1" in common.dj. Available at:
 
      https://www.watt-32.net/misc/exc_dx07.zip
