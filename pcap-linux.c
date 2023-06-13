@@ -742,7 +742,7 @@ pcap_can_set_rfmon_linux(pcap_t *handle)
  *
  * Compared to /proc/net/dev this avoids counting software drops,
  * but may be unimplemented and just return 0.
- * The author has found no straigthforward way to check for support.
+ * The author has found no straightforward way to check for support.
  */
 static long long int
 linux_get_stat(const char * if_name, const char * stat) {
