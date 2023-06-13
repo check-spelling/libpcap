@@ -761,7 +761,7 @@ dnl   Packet capture from services that put captured packets on the
 dnl   network, such as rpcap servers.
 dnl
 dnl We may also need getnameinfo() for packet capture from services
-dnl that put packets on the networik.
+dnl that put packets on the network.
 dnl
 AC_DEFUN(AC_LBL_LIBRARY_NET, [
     #

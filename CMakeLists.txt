@@ -769,7 +769,7 @@ endif()
 #   network, such as rpcap servers.
 #
 # We may also need getnameinfo() for packet capture from services
-# that put packets on the networik.
+# that put packets on the network.
 #
 set(PCAP_LINK_LIBRARIES "")
 set(LIBS "")
