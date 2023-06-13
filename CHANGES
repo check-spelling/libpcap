@@ -1338,7 +1338,7 @@ v0.2.1 Sun Jul 14 03:02:26 PDT 1996
   (steve@research.oknet.com)
 
 - Fixed to handle raw ip addresses such as 0.0.0.1 without "left
-  justifing"
+  justifying"
 
 - Add "sca" keyword (for DEC cluster services) as suggested by Terry
   Kennedy (terry@spcvxa.spc.edu)
