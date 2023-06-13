@@ -111,7 +111,7 @@
 #error "Libpcap will only work if TPACKET_V2 is supported; you must build for a 2.6.27 or later kernel"
 #endif
 
-/* check for memory mapped access avaibility. We assume every needed
+/* check for memory mapped access availability. We assume every needed
  * struct is defined if the macro TPACKET_HDRLEN is defined, because it
  * uses many ring related structs and macros */
 #ifdef TPACKET3_HDRLEN
