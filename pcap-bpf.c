@@ -352,7 +352,7 @@ pcap_next_zbuf(pcap_t *p, int *cc)
 	 * sure that the timeout gets adjusted accordingly.  This requires
 	 * that we analyze when the timeout should be been expired, and
 	 * subtract the current time from that.  If after this operation,
-	 * our timeout is less then or equal to zero, handle it like a
+	 * our timeout is less than or equal to zero, handle it like a
 	 * regular timeout.
 	 */
 	tmout = p->opt.timeout;
