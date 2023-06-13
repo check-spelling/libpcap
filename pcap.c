@@ -3937,7 +3937,7 @@ pcap_get_airpcap_handle(pcap_t *p)
 /*
  * On some platforms, we need to clean up promiscuous or monitor mode
  * when we close a device - and we want that to happen even if the
- * application just exits without explicitl closing devices.
+ * application just exits without explicitly closing devices.
  * On those platforms, we need to register a "close all the pcaps"
  * routine to be called when we exit, and need to maintain a list of
  * pcaps that need to be closed to clean up modes.
