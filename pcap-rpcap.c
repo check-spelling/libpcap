@@ -2096,7 +2096,7 @@ static int rpcap_doauth(SOCKET sockctrl, SSL *ssl, uint8_t *ver,
 		{
 			/* No - discard it and fail. */
 			snprintf(errbuf, PCAP_ERRBUF_SIZE,
-			    "Authenticaton reply from server is too short");
+			    "Authentication reply from server is too short");
 			(void)rpcap_discard(sockctrl, ssl, plen, NULL);
 			return -1;
 		}
@@ -2121,7 +2121,7 @@ static int rpcap_doauth(SOCKET sockctrl, SSL *ssl, uint8_t *ver,
 			 * Discard it and fail.
 			 */
 			snprintf(errbuf, PCAP_ERRBUF_SIZE,
-			    "Authenticaton reply from server is too short");
+			    "Authentication reply from server is too short");
 			(void)rpcap_discard(sockctrl, ssl, plen, NULL);
 			return -1;
 		}

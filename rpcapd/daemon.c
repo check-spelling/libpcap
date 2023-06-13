@@ -1483,7 +1483,7 @@ daemon_AuthUserPwd(char *username, char *password, char *errbuf)
 	 * we have getspnam(), otherwise we just do traditional
 	 * authentication, which, on some platforms, might work, even
 	 * with shadow passwords, if we're running as root.  Traditional
-	 * authenticaion won't work if we're not running as root, as
+	 * authentication won't work if we're not running as root, as
 	 * I think these days all UN*Xes either won't return the password
 	 * at all with getpwnam() or will only do so if you're root.
 	 *
