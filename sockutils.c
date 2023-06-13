@@ -199,7 +199,7 @@ void sock_geterrmsg(char *errbuf, size_t errbuflen, const char *fmt, ...)
  * These are sorted by how likely they are to be the "underlying" problem,
  * so that lower-rated errors for a given address in a given family
  * should not overwrite higher-rated errors for another address in that
- * family, and higher-rated errors should overwrit elower-rated errors.
+ * family, and higher-rated errors should overwrite lower-rated errors.
  */
 typedef enum {
 	SOCK_CONNERR,		/* connection error */
