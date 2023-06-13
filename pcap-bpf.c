@@ -2735,7 +2735,7 @@ check_bpf_bindable(const char *name)
 	 * adapter, rather than by implementing the ioctls that
 	 * {Free,Net,Open,DragonFly}BSD provide. Opening that device
 	 * puts the adapter into monitor mode, which, at least for
-	 * some adapters, causes them to deassociate from the network
+	 * some adapters, causes them to disassociate from the network
 	 * with which they're associated.
 	 *
 	 * Instead, we try to open the corresponding "en" device (so
