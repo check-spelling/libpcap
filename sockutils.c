@@ -1327,7 +1327,7 @@ int sock_send(SOCKET sock, SSL *ssl _U_NOSSL_, const char *buffer, size_t size,
  * \param totsize: total size of the buffer into which data is being copied.
  *
  * \param checkonly: '1' if we do not want to copy data into the buffer and we
- * want just do a buffer ovreflow control, '0' if data has to be copied as well.
+ * want just do a buffer overflow control, '0' if data has to be copied as well.
  *
  * \param errbuf: a pointer to an user-allocated buffer that will contain the complete
  * error message. This buffer has to be at least 'errbuflen' in length.

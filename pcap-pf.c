@@ -79,7 +79,7 @@ struct rtentry;
  */
 struct pcap_pf {
 	int	filtering_in_kernel; /* using kernel filter */
-	u_long	TotPkts;	/* can't oflow for 79 hrs on ether */
+	u_long	TotPkts;	/* can't overflow for 79 hrs on ether */
 	u_long	TotAccepted;	/* count accepted by filter */
 	u_long	TotDrops;	/* count of dropped packets */
 	long	TotMissed;	/* missed by i/f during this run */
