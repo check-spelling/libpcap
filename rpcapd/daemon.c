@@ -1532,7 +1532,7 @@ daemon_AuthUserPwd(char *username, char *password, char *errbuf)
 
 	//
 	// The Single UNIX Specification says that if crypt() fails it
-	// sets errno, but some implementatons that haven't been run
+	// sets errno, but some implementations that haven't been run
 	// through the SUS test suite might not do so.
 	//
 	errno = 0;
