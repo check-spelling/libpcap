@@ -192,7 +192,7 @@ Saturday, December 31, 2022 / The Tcpdump Group
       Return an error if the driver reports 0 timestamp modes supported.
       Close the ADAPTER handle for some errors in
         pcap_create_interface().
-      Get rid of old umaintained VS project files.
+      Get rid of old unmaintained VS project files.
       Fix deprecation warning for pcap_handle().
       Npcap is now at npcap.com, not npcap.org.
       Make sure "no such device" and "no permission to open device"
