@@ -42,7 +42,7 @@
 
 #include "pcap-sita.h"
 
-	/* non-configureable manifests follow */
+	/* non-configurable manifests follow */
 
 #define IOP_SNIFFER_PORT	49152			/* TCP port on the IOP used for 'distributed pcap' usage */
 #define MAX_LINE_SIZE		255				/* max size of a buffer/line in /etc/hosts we allow */
