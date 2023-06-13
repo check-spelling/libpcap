@@ -92,7 +92,7 @@ static int ref_count = 0;
 static u_long mac_count    = 0;
 static u_long filter_count = 0;
 
-static volatile BOOL exc_occured = 0;
+static volatile BOOL exc_occurred = 0;
 
 static struct device *handle_to_device [20];
 
@@ -250,7 +250,7 @@ pcap_read_one (pcap_t *p, pcap_handler callback, u_char *data)
     }
   }
 
-  while (!exc_occured)
+  while (!exc_occurred)
   {
     volatile struct device *dev; /* might be reset by sig_handler */
 
@@ -480,7 +480,7 @@ static void pcap_cleanup_dos (pcap_t *p)
 {
   struct pcap_dos *pd;
 
-  if (!exc_occured)
+  if (!exc_occurred)
   {
     pd = p->priv;
     if (pcap_stats(p,NULL) < 0)
@@ -803,7 +803,7 @@ static void exc_handler (int sig)
     default:
          fprintf (stderr, "Catching signal %d.\n", sig);
   }
-  exc_occured = 1;
+  exc_occurred = 1;
   close_driver();
 }
 #endif  /* __DJGPP__ */
