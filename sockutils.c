@@ -881,7 +881,7 @@ int sock_close(SOCKET sock, char *errbuf, int errbuflen)
 	 */
 	if (shutdown(sock, SHUT_WR))
 	{
-		sock_geterrmsg(errbuf, errbuflen, "shutdown() feiled");
+		sock_geterrmsg(errbuf, errbuflen, "shutdown() failed");
 		/* close the socket anyway */
 		closesocket(sock);
 		return -1;
