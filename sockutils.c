@@ -230,7 +230,7 @@ static sock_errtype sock_geterrtype(int errcode)
 		 * and we're trying the wrong address family.
 		 *
 		 * These overwrite all other errors, as they indicate
-		 * that, even if somethng else went wrong in another
+		 * that, even if something else went wrong in another
 		 * attempt, this probably wouldn't work even if the
 		 * other problems were fixed.
 		 */
