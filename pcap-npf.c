@@ -1592,7 +1592,7 @@ pcap_activate_npf(pcap_t *p)
 	 * that the caller can do anything useful with it.
 	 *
 	 * (Not that we make any general guarantee of that
-	 * sort on UN*X, either, any more, given that not
+	 * sort on UN*X, either, anymore, given that not
 	 * all capture devices are regular OS network
 	 * interfaces.)
 	 */
