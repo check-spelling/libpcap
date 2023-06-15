@@ -22,7 +22,7 @@ DEFS   = -DMSDOS -DDEBUG -DNDIS_DEBUG -D_U_= -Dinline= \
 ASM    = tasm.exe -t -l -mx -m2 -DDEBUG
 
 SOURCE = grammar.c  scanner.c bpf_filt.c bpf_imag.c bpf_dump.c \
-         etherent.c gencode.c nametoad.c pcap-dos.c optimize.c \
+         ethernet.c gencode.c nametoad.c pcap-dos.c optimize.c \
          savefile.c pcap.c msdos\ndis2.c msdos\pktdrvr.c
 
 BORLAND_OBJ = $(SOURCE:.c=.obj) msdos\pkt_rx0.obj msdos\ndis_0.obj
@@ -109,7 +109,7 @@ bpf_imag.obj: bpf_imag.c pcap-int.h pcap.h pcap-bpf.h
 
 bpf_dump.obj: bpf_dump.c pcap.h pcap-bpf.h
 
-etherent.obj: etherent.c pcap-int.h pcap.h pcap-bpf.h pcap-namedb.h
+ethernet.obj: ethernet.c pcap-int.h pcap.h pcap-bpf.h pcap-namedb.h
 
 optimize.obj: optimize.c pcap-int.h pcap.h pcap-bpf.h gencode.h
 
@@ -147,7 +147,7 @@ bpf_imag.o32: bpf_imag.c pcap-int.h pcap.h pcap-bpf.h
 
 bpf_dump.o32: bpf_dump.c pcap.h pcap-bpf.h
 
-etherent.o32: etherent.c pcap-int.h pcap.h pcap-bpf.h pcap-namedb.h
+ethernet.o32: ethernet.c pcap-int.h pcap.h pcap-bpf.h pcap-namedb.h
 
 optimize.o32: optimize.c pcap-int.h pcap.h pcap-bpf.h gencode.h
 

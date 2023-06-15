@@ -82,14 +82,14 @@ skip_line(FILE *f)
 	return c;
 }
 
-struct pcap_etherent *
-pcap_next_etherent(FILE *fp)
+struct pcap_ethernet *
+pcap_next_ethernet(FILE *fp)
 {
 	register int c, i;
 	u_char d;
 	char *bp;
 	size_t namesize;
-	static thread_local struct pcap_etherent e;
+	static thread_local struct pcap_ethernet e;
 
 	memset((char *)&e, 0, sizeof(e));
 	for (;;) {

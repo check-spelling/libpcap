@@ -1533,7 +1533,7 @@ set(PROJECT_SOURCE_LIST_C
     bpf_dump.c
     bpf_filter.c
     bpf_image.c
-    etherent.c
+    ethernet.c
     fmtutils.c
     gencode.c
     nametoaddr.c
