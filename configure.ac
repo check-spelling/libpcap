@@ -32,7 +32,7 @@ AC_SUBST(PACKAGE_NAME)
 # LDFLAGS: inherited from the environment, not modified by us.
 #
 # LIBS: inherited from the environment; we add libraries required by
-# libpcap.  Librares that the core libpcap code requires are added
+# libpcap.  Libraries that the core libpcap code requires are added
 # first; libraries required by additional pcap modules are first
 # added to ADDITIONAL_LIBS, and only added to LIBS at the end, after
 # we're finished doing configuration tests for the modules.
