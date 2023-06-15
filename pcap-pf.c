@@ -593,7 +593,7 @@ pcap_setfilter_pf(pcap_t *p, struct bpf_program *fp)
 	/*
 	 * See if BIOCVERSION works.  If not, we assume the kernel doesn't
 	 * support BPF-style filters (it's not documented in the bpf(7)
-	 * or packetfiler(7) man pages, but the code used to fail if
+	 * or packetfilter(7) man pages, but the code used to fail if
 	 * BIOCSETF worked but BIOCVERSION didn't, and I've seen it do
 	 * kernel filtering in DU 4.0, so presumably BIOCVERSION works
 	 * there, at least).
