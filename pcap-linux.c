@@ -287,7 +287,7 @@ static void pcap_oneshot_linux(u_char *user, const struct pcap_pkthdr *h,
 #else
   /*
    * This is being compiled on a system that lacks TP_STATUS_VLAN_VALID,
-   * so we testwith the value it has in the 3.0 and later kernels, so
+   * so we test with the value it has in the 3.0 and later kernels, so
    * we can test it if we're running on a system that has it.  (If we're
    * running on a system that doesn't have it, it won't be set in the
    * tp_status field, so the tests of it will always fail; that means
