@@ -6145,7 +6145,7 @@ gen_protochain(compiler_state_t *cstate, bpf_u_int32 v, int proto)
 	/*
 	 * To quote a comment in optimize.c:
 	 *
-	 * "These data structures are used in a Cocke and Shwarz style
+	 * "These data structures are used in a Cocke and Schwartz style
 	 * value numbering scheme.  Since the flowgraph is acyclic,
 	 * exit values can be propagated from a node's predecessors
 	 * provided it is uniquely defined."
