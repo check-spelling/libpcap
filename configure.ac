@@ -2541,7 +2541,7 @@ if test "xxx_only" != yes; then
       # software that looks for /dev/null or /dev/tty, for example,
       # so doing that is *REALLY* not a good idea), please provide
       # some mechanism to determine that directory at *run time*,
-      # rather than *configure time*, so that it works when doinga
+      # rather than *configure time*, so that it works when doing
       # a cross-build, and that works with *multiple* distributions,
       # with our without udev, and with multiple versions of udev,
       # with udevinfo or udevadm or any other mechanism to get the
