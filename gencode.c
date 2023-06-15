@@ -218,7 +218,7 @@ enum e_offrel {
 };
 
 /*
- * We divy out chunks of memory rather than call malloc each time so
+ * We divvy out chunks of memory rather than call malloc each time so
  * we don't have to worry about leaking memory.  It's probably
  * not a big deal if all this memory was wasted but if this ever
  * goes into a library that would probably not be a good idea.
