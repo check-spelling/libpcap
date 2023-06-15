@@ -600,7 +600,7 @@ static int dpdk_pre_init(char * ebuf, int eaccess_not_fatal)
 	char *dargv[DPDK_ARGC_MAX];
 	char *ptr_dpdk_cfg = NULL;
 	int ret;
-	// globale var
+	// global var
 	if (is_dpdk_pre_inited != 0)
 	{
 		// already inited; did that succeed?
