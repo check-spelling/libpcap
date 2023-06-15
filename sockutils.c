@@ -1043,7 +1043,7 @@ get_gai_errstring(char *errbuf, int errbuflen, const char *prefix, int err,
 }
 
 /*
- * \brief Checks that the address, port and flags given are valids and it returns an 'addrinfo' structure.
+ * \brief Checks that the address, port and flags given are valid and it returns an 'addrinfo' structure.
  *
  * This function basically calls the getaddrinfo() calls, and it performs a set of sanity checks
  * to control that everything is fine (e.g. a TCP socket cannot have a mcast address, and such).
