@@ -1295,7 +1295,7 @@ struct device tc90xbc_dev LOCKED_VAR = {
 
 struct device wd_dev LOCKED_VAR = {
               "wd",
-              "Westen Digital",
+              "Western Digital",
               0,
               0,0,0,0,0,0,
               &tc90xbc_dev,
