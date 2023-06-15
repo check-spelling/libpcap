@@ -1009,7 +1009,7 @@ Mon.    October 27, 2008.  ken@netfunctional.ca.  Summary for 1.0.0 libpcap rele
 	Autogenerate VERSION numbers better
 
 Mon.    September 10, 2007.  ken@xelerance.com.  Summary for 0.9.8 libpcap release
-        Change build process to put public libpcap headers into pcap subir
+        Change build process to put public libpcap headers into pcap subdir
         DLT: Add value for IPMI IPMB packets
         DLT: Add value for u10 Networks boards
         Require <net/pfvar.h> for pf definitions - allows reading of pflog formatted
