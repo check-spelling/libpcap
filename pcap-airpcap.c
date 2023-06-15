@@ -125,7 +125,7 @@ load_airpcap_functions(void)
 	 * loading; in any case, return the status before
 	 * we modified it.
 	 */
-	current_status = IntelockedCompareExchange((LONG *)&airpcap_load_status,
+	current_status = InterlockedCompareExchange((LONG *)&airpcap_load_status,
 	    AIRPCAP_API_LOADING, AIRPCAP_API_UNLOADED);
 
 	/*
@@ -140,7 +140,7 @@ load_airpcap_functions(void)
 	 * succeeded.
 	 */
 	while (current_status == AIRPCAP_API_LOADING) {
-		current_status = IntelockedCompareExchange((LONG*)&airpcap_load_status,
+		current_status = InterlockedCompareExchange((LONG*)&airpcap_load_status,
 		    AIRPCAP_API_LOADING, AIRPCAP_API_LOADING);
 		Sleep(10);
 	}
@@ -230,7 +230,7 @@ load_airpcap_functions(void)
 	/*
 	 * Now set the status appropriately - and atomically.
 	 */
-	IntelockedExchange((LONG *)&airpcap_load_status, current_status);
+	InterlockedExchange((LONG *)&airpcap_load_status, current_status);
 
 	return current_status;
 }

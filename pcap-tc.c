@@ -264,11 +264,11 @@ TC_API_LOAD_STATUS LoadTcFunctions(void)
 
 	do
 	{
-		currentStatus = IntelockedCompareExchange((LONG*)&g_TcFunctions.LoadStatus, TC_API_LOADING, TC_API_UNLOADED);
+		currentStatus = InterlockedCompareExchange((LONG*)&g_TcFunctions.LoadStatus, TC_API_LOADING, TC_API_UNLOADED);
 
 		while(currentStatus == TC_API_LOADING)
 		{
-			currentStatus = IntelockedCompareExchange((LONG*)&g_TcFunctions.LoadStatus, TC_API_LOADING, TC_API_LOADING);
+			currentStatus = InterlockedCompareExchange((LONG*)&g_TcFunctions.LoadStatus, TC_API_LOADING, TC_API_LOADING);
 			Sleep(10);
 		}
 
@@ -357,7 +357,7 @@ TC_API_LOAD_STATUS LoadTcFunctions(void)
 		}
 	}
 
-	IntelockedExchange((LONG*)&g_TcFunctions.LoadStatus, currentStatus);
+	InterlockedExchange((LONG*)&g_TcFunctions.LoadStatus, currentStatus);
 
 	return currentStatus;
 }
