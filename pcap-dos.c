@@ -741,7 +741,7 @@ not_probed:
 }
 
 /*
- * Deinitialise MAC driver.
+ * Deinitialize MAC driver.
  * Set receive mode back to default mode.
  */
 static void close_driver (void)
