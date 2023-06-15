@@ -851,7 +851,7 @@ get_figure_of_merit(pcap_if_t *dev)
 #ifndef _WIN32
 /*
  * Try to get a description for a given device.
- * Returns a mallocated description if it could and NULL if it couldn't.
+ * Returns a malloced description if it could and NULL if it couldn't.
  *
  * XXX - on FreeBSDs that support it, should it get the sysctl named
  * "dev.{adapter family name}.{adapter unit}.%desc" to get a description
