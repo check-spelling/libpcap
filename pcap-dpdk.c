@@ -570,7 +570,7 @@ static int parse_dpdk_cfg(char* dpdk_cfg,char** dargv)
 			skip_space=!skip_space; // skip normal char
 			dargv[cnt++] = dpdk_cfg+i;
 		}
-		if (!skip_space && dpdk_cfg[i]==' '){ // fint a space
+		if (!skip_space && dpdk_cfg[i]==' '){ // find a space
 			dpdk_cfg[i]=0x00; // end of this opt
 			skip_space=!skip_space; // skip space char
 		}
