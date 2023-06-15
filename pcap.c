@@ -1990,7 +1990,7 @@ pcap_parse_source(const char *source, char **schemep, char **userinfop,
 			    *(bracketp + 1) != ':') {
 				/*
 				 * There's extra crud after the
-				 * closing square bracketn.
+				 * closing square bracket.
 				 */
 				snprintf(ebuf, PCAP_ERRBUF_SIZE,
 				    "Extra text after IP-literal in URL");
