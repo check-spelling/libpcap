@@ -1057,7 +1057,7 @@ int pcap_platform_finddevs(pcap_if_list_t *devlistp, char *errbuf) {
 	strcpy(errbuf, "");
 	if (acn_parse_hosts_file(errbuf))							/* scan the hosts file for potential IOPs */
 		{
-		//printf("pcap_findalldevs() returning BAD after parsehosts\n");				// fulko
+		//printf("pcap_findalldevs() returning BAD after parse_hosts\n");				// fulko
 		return -1;
 		}
 	//printf("pcap_findalldevs() got hostlist now finding devs\n");				// fulko
