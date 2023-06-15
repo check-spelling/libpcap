@@ -1870,7 +1870,7 @@ static int pcap_setsampling_remote(pcap_t *fp)
 	struct rpcap_header header;		/* To keep the reply message */
 	struct rpcap_sampling *sampling_pars;	/* Structure that is needed to send sampling parameters to the remote host */
 
-	/* If no samping is requested, return 'ok' */
+	/* If no sampling is requested, return 'ok' */
 	if (fp->rmt_samp.method == PCAP_SAMP_NOSAMP)
 		return 0;
 
