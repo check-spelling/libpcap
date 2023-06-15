@@ -556,7 +556,7 @@ Sunday, July 22, 2018
         Windows with WinPcap/Npcap (GitHub issue #824)
     Have pcap_dump_open_append() create the dump file if it doesn't
         exists (GitHub issue #247)
-    Fix the maxmum snapshot length for DLT_USBPCAP
+    Fix the maximum snapshot length for DLT_USBPCAP
     Use -fPIC when building for 64-bit SPARC on Linux (GitHub issue #837)
     Fix CMake 64-bit library installation directory on some Linux
         distributions
