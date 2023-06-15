@@ -803,13 +803,13 @@ pcap_ether_aton(const char *s)
  * Roll our own.
  *
  * This should be thread-safe, as we define the static variables
- * we use to be thread-local, and as pcap_next_etherent() does so
+ * we use to be thread-local, and as pcap_next_ethernet() does so
  * as well.
  */
 u_char *
 pcap_ether_hostton(const char *name)
 {
-	register struct pcap_etherent *ep;
+	register struct pcap_ethernet *ep;
 	register u_char *ap;
 	static thread_local FILE *fp = NULL;
 	static thread_local int init = 0;
@@ -824,7 +824,7 @@ pcap_ether_hostton(const char *name)
 	else
 		rewind(fp);
 
-	while ((ep = pcap_next_etherent(fp)) != NULL) {
+	while ((ep = pcap_next_ethernet(fp)) != NULL) {
 		if (strcmp(ep->name, name) == 0) {
 			ap = (u_char *)malloc(6);
 			if (ap != NULL) {

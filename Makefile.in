@@ -89,7 +89,7 @@ BISON_BYACC = @BISON_BYACC@
 PLATFORM_C_SRC =	@PLATFORM_C_SRC@
 MODULE_C_SRC =		@MODULE_C_SRC@
 REMOTE_C_SRC =		@REMOTE_C_SRC@
-COMMON_C_SRC =	pcap.c gencode.c optimize.c nametoaddr.c etherent.c \
+COMMON_C_SRC =	pcap.c gencode.c optimize.c nametoaddr.c ethernet.c \
 		fmtutils.c pcap-util.c \
 		savefile.c sf-pcap.c sf-pcapng.c pcap-common.c pcap-options.c \
 		pcap-usb-linux-common.c bpf_image.c bpf_filter.c bpf_dump.c

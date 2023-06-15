@@ -39,7 +39,7 @@ extern "C" {
 #endif
 
 /*
- * As returned by the pcap_next_etherent()
+ * As returned by the pcap_next_ethernet()
  * XXX this stuff doesn't belong in this interface, but this
  * library already must do name to address translation, so
  * on systems that don't have support for /etc/ethers, we
@@ -48,14 +48,14 @@ extern "C" {
  * marked as exported in some OSes offering libpcap (such
  * as Debian).
  */
-struct pcap_etherent {
+struct pcap_ethernet {
 	u_char addr[6];
 	char name[122];
 };
 #ifndef PCAP_ETHERS_FILE
 #define PCAP_ETHERS_FILE "/etc/ethers"
 #endif
-PCAP_API struct	pcap_etherent *pcap_next_etherent(FILE *);
+PCAP_API struct	pcap_ethernet *pcap_next_ethernet(FILE *);
 PCAP_API u_char *pcap_ether_hostton(const char*);
 PCAP_API u_char *pcap_ether_aton(const char *);
 
@@ -73,7 +73,7 @@ PCAP_API int	pcap_nametollc(const char *);
 /*
  * If a protocol is unknown, PROTO_UNDEF is returned.
  * Also, pcap_nametoport() returns the protocol along with the port number.
- * If there are ambiguous entried in /etc/services (i.e. domain
+ * If there are ambiguous entries in /etc/services (i.e. domain
  * can be either tcp or udp) PROTO_UNDEF is returned.
  */
 #define PROTO_UNDEF		-1

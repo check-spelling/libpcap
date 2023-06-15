@@ -226,7 +226,7 @@ in `/usr/include/sys/dlpi.h`, and find the corresponding value.
 	diag-control.h	    - compiler diagnostics control macros
 	dlpisubs.c	    - DLPI-related functions for pcap-dlpi.c and pcap-libdlpi.c
 	dlpisubs.h	    - DLPI-related function declarations
-	etherent.c	    - /etc/ethers support routines
+	ethernet.c	    - /etc/ethers support routines
 	ethertype.h	    - Ethernet protocol types and names definitions
 	fad-getad.c	    - pcap_findalldevs() for systems with getifaddrs()
 	fad-gifc.c	    - pcap_findalldevs() for systems with only SIOCGIFLIST
