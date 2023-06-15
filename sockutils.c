@@ -1848,7 +1848,7 @@ int sock_check_hostlist(char *hostlist, const char *sep, struct sockaddr_storage
  * i.e. an sockaddr_storage structure.
  *
  * The two structures do not need to be sockaddr_storage; you can have both 'sockaddr_in' and
- * sockaddr_in6, properly acsted in order to be compliant to the function interface.
+ * sockaddr_in6, properly casted in order to be compliant to the function interface.
  *
  * This function will return '0' if the two addresses matches, '-1' if not.
  *
